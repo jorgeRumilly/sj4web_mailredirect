@@ -85,13 +85,13 @@ class Sj4web_MailRedirect extends Module
         $params['replyTo'] = [];
 
         if (!empty($params['subject'])) {
-            $prefix = $this->l('[REDIRECTED]', 'sj4web_mailredirect');
+            $prefix = $this->trans('[REDIRECTED]', [], 'Modules.Sj4webmailredirect.Admin');
             $params['subject'] = $prefix.' '.$params['subject'];
         }
 
         if (!empty($params['templateVars']) && is_array($params['templateVars'])) {
             $params['templateVars']['{redirect_info}'] =
-                $this->l('Email redirected by sj4web_mailredirect (originally for the customer).', 'sj4web_mailredirect');
+                $this->trans('Email redirected by sj4web_mailredirect (originally for the customer).', [], 'Modules.Sj4webmailredirect.Admin');
         }
     }
 
@@ -133,7 +133,7 @@ class Sj4web_MailRedirect extends Module
                 'input' => [
                     [
                         'type' => 'switch',
-                        'label' => 'Enable redirection',
+                        'label' => $this->trans('Enable redirection', [], 'Modules.Sj4webmailredirect.Admin'),
                         'name' => 'SJ4WEB_MAIL_REDIRECT_ENABLED',
                         'values' => [
                             ['id' => 'on',  'value' => 1, 'label' => 'Yes'],
@@ -142,34 +142,34 @@ class Sj4web_MailRedirect extends Module
                     ],
                     [
                         'type' => 'text',
-                        'label' => 'Target email',
+                        'label' => $this->trans('Target email', [], 'Modules.Sj4webmailredirect.Admin'),
                         'name' => 'SJ4WEB_MAIL_REDIRECT_TO',
-                        'desc' => 'All emails will be sent to this address.',
+                        'desc' => $this->trans('All emails will be sent to this address.', [], 'Modules.Sj4webmailredirect.Admin'),
                         'class' => 'fixed-width-xxl',
                     ],
                     [
                         'type' => 'textarea',
-                        'label' => 'Whitelist • Emails (one per line)',
+                        'label' => $this->trans('Whitelist • Emails (one per line)', [], 'Modules.Sj4webmailredirect.Admin'),
                         'name' => 'SJ4WEB_MR_WHITELIST_EMAILS',
-                        'desc' => "Example:\nadmin@shop.tld\nsupport@shop.tld",
+                        'desc' => $this->trans("Example:\nadmin@shop.tld\nsupport@shop.tld", [], 'Modules.Sj4webmailredirect.Admin'),
                         'rows' => 4,
                     ],
                     [
                         'type' => 'textarea',
-                        'label' => 'Whitelist • Domains (one per line)',
+                        'label' => $this->trans('Whitelist • Domains (one per line)', [], 'Modules.Sj4webmailredirect.Admin'),
                         'name' => 'SJ4WEB_MR_WHITELIST_DOMAINS',
-                        'desc' => "Example:\n@sj4web.fr\ncompagniedelagrandeourse.com",
+                        'desc' => $this->trans("Example:\n@sj4web.fr\ncompagniedelagrandeourse.com", [], 'Modules.Sj4webmailredirect.Admin'),
                         'rows' => 3,
                     ],
                     [
                         'type' => 'textarea',
-                        'label' => 'Whitelist • Templates (one per line)',
+                        'label' => $this->trans('Whitelist • Templates (one per line)', [], 'Modules.Sj4webmailredirect.Admin'),
                         'name' => 'SJ4WEB_MR_WHITELIST_TEMPLATES',
-                        'desc' => "Example:\ncontact_form\ntest_email",
+                        'desc' => $this->trans("Example:\ncontact_form\ntest_email", [], 'Modules.Sj4webmailredirect.Admin'),
                         'rows' => 3,
                     ],
                 ],
-                'submit' => ['title' => 'Save'],
+                'submit' => ['title' => $this->trans('Save', [], 'Admin.Actions'), 'class' => 'btn btn-default pull-right'],
             ],
         ]];
 
