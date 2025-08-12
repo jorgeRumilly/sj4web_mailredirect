@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+  <file source-language="fr-FR" datatype="plaintext" original="file" target-language="fr-FR">
+    <body>
+      <trans-unit id="displayName">
+        <source>SJ4WEB - Mail redirect</source>
+        <target>SJ4WEB - Redirection des emails</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source>Redirect all outgoing emails to a single address (staging/dev).</source>
+        <target>Redirige tous les emails sortants vers une adresse unique (staging/dev).</target>
+      </trans-unit>
+
+      <trans-unit id="legend.title">
+        <source>Mail redirect</source>
+        <target>Redirection des emails</target>
+      </trans-unit>
+      <trans-unit id="field.enable">
+        <source>Enable redirection</source>
+        <target>Activer la redirection</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source>Yes</source>
+        <target>Oui</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source>No</source>
+        <target>Non</target>
+      </trans-unit>
+      <trans-unit id="field.target">
+        <source>Target email</source>
+        <target>Adresse de destination</target>
+      </trans-unit>
+      <trans-unit id="field.target.desc">
+        <source>All emails will be sent to this address.</source>
+        <target>Tous les emails seront envoyés à cette adresse.</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>Save</source>
+        <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="saved.ok">
+        <source>Settings saved.</source>
+        <target>Paramètres enregistrés.</target>
+      </trans-unit>
+
+      <trans-unit id="redirect.banner">
+        <source>Email redirected by sj4web_mailredirect (originally for the customer).</source>
+        <target>Email redirigé par sj4web_mailredirect (initialement destiné au client).</target>
+      </trans-unit>
+      <trans-unit id="subject.prefix">
+        <source>[REDIRECTED]</source>
+        <target>[REDIRIGÉ]</target>
+      </trans-unit>
+    <trans-unit id="field.whitelist.emails">
+      <source>Whitelist • Emails (one per line)</source>
+      <target>Liste blanche • Emails (un par ligne)</target>
+    </trans-unit>
+    <trans-unit id="field.whitelist.emails.desc">
+      <source>Example:\nadmin@shop.tld\nsupport@shop.tld</source>
+      <target>Exemple :\nadmin@shop.tld\nsupport@shop.tld</target>
+    </trans-unit>
+
+    <trans-unit id="field.whitelist.domains">
+      <source>Whitelist • Domains (one per line)</source>
+      <target>Liste blanche • Domaines (un par ligne)</target>
+    </trans-unit>
+    <trans-unit id="field.whitelist.domains.desc">
+      <source>Example:\n@sj4web.fr\ncompagniedelagrandeourse.com</source>
+      <target>Exemple :\n@sj4web.fr\ncompagniedelagrandeourse.com</target>
+    </trans-unit>
+
+    <trans-unit id="field.whitelist.templates">
+      <source>Whitelist • Templates (one per line)</source>
+      <target>Liste blanche • Templates (un par ligne)</target>
+    </trans-unit>
+    <trans-unit id="field.whitelist.templates.desc">
+      <source>Example:\ncontact_form\ntest_email</source>
+      <target>Exemple :\ncontact_form\ntest_email</target>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

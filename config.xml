@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>sj4web_mailredirect</name>
+    <displayName><![CDATA[SJ4WEB - Mail redirect]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Redirect all outgoing emails to a single address (staging/dev).]]></description>
+    <author><![CDATA[SJ4WEB.FR]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>
